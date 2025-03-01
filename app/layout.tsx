@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+// import ScrollContainer from "./scroll-container";
+import Background from "./components/background";
 
+import "./globals.css";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -29,8 +31,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {navigation}
-        {children}
+        <div className="w-screen h-screen relative">
+          <Background />
+          {children}
+          {navigation}
+
+          {/* <ScrollContainer>{children}</ScrollContainer> */}
+        </div>
       </body>
     </html>
   );
