@@ -7,6 +7,9 @@ settings:
 importers:
   .:
     dependencies:
+      "@types/three":
+        specifier: ^0.174.0
+        version: 0.174.0
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -31,6 +34,12 @@ importers:
       react-icons:
         specifier: ^5.5.0
         version: 5.5.0(react@19.0.0)
+      swiper:
+        specifier: ^11.2.6
+        version: 11.2.6
+      three:
+        specifier: ^0.174.0
+        version: 0.174.0
     devDependencies:
       "@eslint/eslintrc":
         specifier: ^3
@@ -44,6 +53,9 @@ importers:
       "@types/react-dom":
         specifier: ^19
         version: 19.0.4(@types/react@19.0.10)
+      daisyui:
+        specifier: ^5.0.9
+        version: 5.0.9
       eslint:
         specifier: ^9
         version: 9.21.0(jiti@1.21.7)
@@ -518,6 +530,12 @@ packages:
         integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==,
       }
 
+  "@tweenjs/tween.js@23.1.3":
+    resolution:
+      {
+        integrity: sha512-vJmvvwFxYuGnF2axRtPYocag6Clbb5YS7kLL+SO/TeVFzHqDIWrNKYtcsPMibjDx9O+bu+psAy9NKfWklassUA==,
+      }
+
   "@types/estree@1.0.6":
     resolution:
       {
@@ -554,6 +572,24 @@ packages:
     resolution:
       {
         integrity: sha512-JuRQ9KXLEjaUNjTWpzuR231Z2WpIwczOkBEIvbHNCzQefFIT0L8IqE6NV6ULLyC1SI/i234JnDoMkfg+RjQj2g==,
+      }
+
+  "@types/stats.js@0.17.3":
+    resolution:
+      {
+        integrity: sha512-pXNfAD3KHOdif9EQXZ9deK82HVNaXP5ZIF5RP2QG6OQFNTaY2YIetfrE9t528vEreGQvEPRDDc8muaoYeK0SxQ==,
+      }
+
+  "@types/three@0.174.0":
+    resolution:
+      {
+        integrity: sha512-De/+vZnfg2aVWNiuy1Ldu+n2ydgw1osinmiZTAn0necE++eOfsygL8JpZgFjR2uHmAPo89MkxBj3JJ+2BMe+Uw==,
+      }
+
+  "@types/webxr@0.5.21":
+    resolution:
+      {
+        integrity: sha512-geZIAtLzjGmgY2JUi6VxXdCrTb99A7yP49lxLr2Nm/uIK0PkkxcEi4OGhoGDO4pxCf3JwGz2GiJL2Ej4K2bKaA==,
       }
 
   "@typescript-eslint/eslint-plugin@8.24.1":
@@ -626,6 +662,12 @@ packages:
         integrity: sha512-EwVHlp5l+2vp8CoqJm9KikPZgi3gbdZAtabKT9KPShGeOcJhsv4Zdo3oc8T8I0uKEmYoU4ItyxbptjF08enaxg==,
       }
     engines: { node: ^18.18.0 || ^20.9.0 || >=21.1.0 }
+
+  "@webgpu/types@0.1.56":
+    resolution:
+      {
+        integrity: sha512-JkT4ngqwk4gKAFoWtXCcC1+TGhSStVtauS9z27slOGSFYr+QqjS0CoawiAxP7Gq9xkT4Pw9uouvWPT44HwbUiw==,
+      }
 
   acorn-jsx@5.3.2:
     resolution:
@@ -964,6 +1006,12 @@ packages:
     resolution:
       {
         integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==,
+      }
+
+  daisyui@5.0.9:
+    resolution:
+      {
+        integrity: sha512-RsaehHh45f+0shWgZZaOY09/8eOae2voRsqJCD71j9yrnYgcke0Nj5ys0ZxrW4SPcc4+q96kWyJu0Z8P1zZdoA==,
       }
 
   damerau-levenshtein@1.0.8:
@@ -1372,6 +1420,12 @@ packages:
     peerDependenciesMeta:
       picomatch:
         optional: true
+
+  fflate@0.8.2:
+    resolution:
+      {
+        integrity: sha512-cPJU47OaAoCbg0pBvzsgpTPhmhqI5eJjh/JIu8tPj5q+T7iLvW/JAYUqmE7KOB4R1ZyEhzBaIQpQpardBF5z8A==,
+      }
 
   file-entry-cache@8.0.0:
     resolution:
@@ -1996,6 +2050,12 @@ packages:
         integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==,
       }
     engines: { node: ">= 8" }
+
+  meshoptimizer@0.18.1:
+    resolution:
+      {
+        integrity: sha512-ZhoIoL7TNV4s5B6+rx5mC//fw8/POGyNxS/DZyCJeiZ12ScLfVwRE/GfsxwiTkMYYD5DmK2/JXnEVXqL4rF+Sw==,
+      }
 
   micromatch@4.0.8:
     resolution:
@@ -2772,6 +2832,13 @@ packages:
       }
     engines: { node: ">= 0.4" }
 
+  swiper@11.2.6:
+    resolution:
+      {
+        integrity: sha512-8aXpYKtjy3DjcbzZfz+/OX/GhcU5h+looA6PbAzHMZT6ESSycSp9nAjPCenczgJyslV+rUGse64LMGpWE3PX9Q==,
+      }
+    engines: { node: ">= 4.7.0" }
+
   tailwindcss@3.4.17:
     resolution:
       {
@@ -2798,6 +2865,12 @@ packages:
     resolution:
       {
         integrity: sha512-RVZSIV5IG10Hk3enotrhvz0T9em6cyHBLkH/YAZuKqd8hRkKhSfCGIcP2KUY0EPxndzANBmNllzWPwak+bheSw==,
+      }
+
+  three@0.174.0:
+    resolution:
+      {
+        integrity: sha512-p+WG3W6Ov74alh3geCMkGK9NWuT62ee21cV3jEnun201zodVF4tCE5aZa2U122/mkLRmhJJUQmLLW1BH00uQJQ==,
       }
 
   tinyglobby@0.2.12:
@@ -3202,6 +3275,8 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
+  "@tweenjs/tween.js@23.1.3": {}
+
   "@types/estree@1.0.6": {}
 
   "@types/json-schema@7.0.15": {}
@@ -3219,6 +3294,19 @@ snapshots:
   "@types/react@19.0.10":
     dependencies:
       csstype: 3.1.3
+
+  "@types/stats.js@0.17.3": {}
+
+  "@types/three@0.174.0":
+    dependencies:
+      "@tweenjs/tween.js": 23.1.3
+      "@types/stats.js": 0.17.3
+      "@types/webxr": 0.5.21
+      "@webgpu/types": 0.1.56
+      fflate: 0.8.2
+      meshoptimizer: 0.18.1
+
+  "@types/webxr@0.5.21": {}
 
   "@typescript-eslint/eslint-plugin@8.24.1(@typescript-eslint/parser@8.24.1(eslint@9.21.0(jiti@1.21.7))(typescript@5.7.3))(eslint@9.21.0(jiti@1.21.7))(typescript@5.7.3)":
     dependencies:
@@ -3296,6 +3384,8 @@ snapshots:
     dependencies:
       "@typescript-eslint/types": 8.24.1
       eslint-visitor-keys: 4.2.0
+
+  "@webgpu/types@0.1.56": {}
 
   acorn-jsx@5.3.2(acorn@8.14.0):
     dependencies:
@@ -3505,6 +3595,8 @@ snapshots:
   cssesc@3.0.0: {}
 
   csstype@3.1.3: {}
+
+  daisyui@5.0.9: {}
 
   damerau-levenshtein@1.0.8: {}
 
@@ -3902,6 +3994,8 @@ snapshots:
     optionalDependencies:
       picomatch: 4.0.2
 
+  fflate@0.8.2: {}
+
   file-entry-cache@8.0.0:
     dependencies:
       flat-cache: 4.0.1
@@ -4258,6 +4352,8 @@ snapshots:
   math-intrinsics@1.1.0: {}
 
   merge2@1.4.1: {}
+
+  meshoptimizer@0.18.1: {}
 
   micromatch@4.0.8:
     dependencies:
@@ -4768,6 +4864,8 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
+  swiper@11.2.6: {}
+
   tailwindcss@3.4.17:
     dependencies:
       "@alloc/quick-lru": 5.2.0
@@ -4804,6 +4902,8 @@ snapshots:
   thenify@3.3.1:
     dependencies:
       any-promise: 1.3.0
+
+  three@0.174.0: {}
 
   tinyglobby@0.2.12:
     dependencies:

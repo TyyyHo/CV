@@ -1,36 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import { cn } from "../lib/cn";
 
 //icon
 import { VscHome, VscRepo, VscMail } from "react-icons/vsc";
-import { cn } from "../lib/cn";
 
-export const navigation = Object.freeze([
-  {
-    id: 0,
-    name: "Home",
-    path: "/",
-    icon: VscHome,
-    // icon: <VscHome className="size-5" />,
-  },
-  {
-    id: 1,
-    name: "Profile",
-    path: "/profile",
-    icon: VscRepo,
-    // icon: <VscRepo className="size-5" />,
-  },
-  {
-    id: 2,
-    name: "Contact",
-    path: "/contact",
-    icon: VscMail,
-    // icon: <VscMail  />,
-  },
-]);
-
-export default function Page() {
+export default function Navigation() {
   return (
     <div className="size-fit border border-neutral-700 rounded-2xl py-3 px-4 flex gap-8 fixed bottom-10 left-1/2 -translate-x-1/2 bg-black">
       {navigation.map((item) => (
@@ -61,3 +37,24 @@ export default function Page() {
 function ignoreLink(e: React.MouseEvent<HTMLParagraphElement>) {
   e.preventDefault();
 }
+
+export const navigation = Object.freeze([
+  {
+    id: 0,
+    name: "Home",
+    path: "/",
+    icon: VscHome,
+  },
+  {
+    id: 1,
+    name: "Profile",
+    path: "/profile",
+    icon: VscRepo,
+  },
+  {
+    id: 2,
+    name: "Contact",
+    path: "/contact",
+    icon: VscMail,
+  },
+]);
