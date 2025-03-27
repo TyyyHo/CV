@@ -5,7 +5,7 @@ import "swiper/css";
 export default function Home() {
   return (
     <div className="w-screen h-screen flex items-center justify-center">
-      <div className="carousel w-full">
+      <div className="carousel w-full bg-white ">
         <div id="item1" className="carousel-item w-full">
           <img
             src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
